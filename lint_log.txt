@@ -1,0 +1,22 @@
+﻿
+> alfunun-web@0.1.0 lint
+> eslint
+
+
+D:\Alfunun Academy\src\app\admin\dashboard\page.tsx
+  25:42  error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  @typescript-eslint/no-explicit-any
+  41:49  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\Alfunun Academy\src\app\admin\dashboard\page.tsx:41:49
+  39 |
+  40 |         let y = 60;
+> 41 |         doc.text(`Voucher ID: #INV-${Math.floor(Math.random() * 10000)}`, 20, y);
+     |                                                 ^^^^^^^^^^^^^ Cannot call impure function
+  42 |         y += 15;
+  43 |         doc.text(`Student Name: ${student.name}`, 20, y);
+  44 |         y += 15;  react-hooks/purity
+
+Γ£û 2 problems (2 errors, 0 warnings)
+

@@ -1,0 +1,157 @@
+﻿
+> alfunun-web@0.1.0 build
+> next build
+
+   Γû▓ Next.js 16.0.8 (Turbopack)
+
+   Creating an optimized production build ...
+node.exe : Error: Cannot 
+apply unknown utility 
+class `bg-white`. Are you 
+using CSS modules or 
+similar and missing 
+`@reference`? https://tail
+windcss.com/docs/functions
+-and-directives#reference-
+directive
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo        
+      : NotSpecified: (E  
+  rror: Cannot a...renc   
+ e-directive:String) [    
+], RemoteException
+    + FullyQualifiedError 
+   Id : NativeCommandErr  
+  or
+ 
+    [2m[at 
+onInvalidCandidate 
+(D:\Alfunun Academy\node_m
+odules\tailwindcss\dist\li
+b.js:21:1314)][0m
+    [2m[at Te 
+(D:\Alfunun Academy\node_m
+odules\tailwindcss\dist\li
+b.js:16:36364)][0m
+    [2m[at D:\Alfunun Aca
+demy\node_modules\tailwind
+css\dist\lib.js:21:355][0
+m
+    [2m[at Tr 
+(D:\Alfunun Academy\node_m
+odules\tailwindcss\dist\li
+b.js:3:1718)][0m
+    [2m[at _ (D:\Alfunun 
+Academy\node_modules\tailw
+indcss\dist\lib.js:3:1377)
+][0m
+    [2m[at Se 
+(D:\Alfunun Academy\node_m
+odules\tailwindcss\dist\li
+b.js:21:172)][0m
+    [2m[at ln 
+(D:\Alfunun Academy\node_m
+odules\tailwindcss\dist\li
+b.js:38:294)][0m
+    [2m[at process.proces
+sTicksAndRejections (node:
+internal/process/task_queu
+es:103:5)][0m
+    [2m[at async sn 
+(D:\Alfunun Academy\node_m
+odules\tailwindcss\dist\li
+b.js:38:631)][0m
+    [2m[at async Qr 
+(D:\Alfunun Academy\node_m
+odules\@tailwindcss\node\d
+ist\index.js:10:3385)][0m
+
+> Build error occurred
+Error: Turbopack build 
+failed with 1 errors:
+./src/app/globals.css
+Error evaluating Node.js 
+code
+CssSyntaxError: 
+tailwindcss: D:\Alfunun Ac
+ademy\src\app\globals.css:
+1:1: Cannot apply unknown 
+utility class `bg-white`. 
+Are you using CSS modules 
+or similar and missing 
+`@reference`? https://tail
+windcss.com/docs/functions
+-and-directives#reference-
+directive
+    at Input.error (node_m
+odules/postcss/lib/input.j
+s:135:16) [D:\Alfunun Acad
+emy\.next\build\chunks\nod
+e_modules_fe693df6._.js:46
+51:22]
+    at Root.error (node_mo
+dules/postcss/lib/node.js:
+146:32) [D:\Alfunun Academ
+y\.next\build\chunks\node_
+modules_fe693df6._.js:928:
+38]
+    [at Object.Once 
+(D:\Alfunun Academy\node_m
+odules\@tailwindcss\postcs
+s\dist\index.js:10:6912)]
+    [at process.processTic
+ksAndRejections (node:inte
+rnal/process/task_queues:1
+03:5)]
+    at async 
+LazyResult.runAsync (node_
+modules/postcss/lib/lazy-r
+esult.js:293:11) 
+[D:\Alfunun Academy\.next\
+build\chunks\node_modules_
+fe693df6._.js:6206:21]
+    at async transform (tu
+rbopack:///[turbopack-node
+]/transforms/postcss.ts:70
+:34) [D:\Alfunun Academy\.
+next\build\chunks\[root-of
+-the-server]__51225daf._.j
+s:146:36]
+    at async run (turbopac
+k:///[turbopack-node]/ipc/
+evaluate.ts:92:23) 
+[D:\Alfunun Academy\.next\
+build\chunks\[root-of-the-
+server]__974941ed._.js:443
+:31]
+
+Import trace:
+  Client Component 
+Browser:
+    ./src/app/globals.css 
+[Client Component Browser]
+    ./src/app/layout.tsx 
+[Server Component]
+
+
+    at async transform (tu
+rbopack:///[turbopack-node
+]/transforms/postcss.ts:70
+:34) [D:\Alfunun Academy\.
+next\build\chunks\[root-of
+-the-server]__51225daf._.j
+s:146:36])
+    at async run (turbopac
+k:///[turbopack-node]/ipc/
+evaluate.ts:92:23) 
+[D:\Alfunun Academy\.next\
+build\chunks\[root-of-the-
+server]__974941ed._.js:443
+:31])
