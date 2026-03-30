@@ -114,7 +114,7 @@ export default function AdmissionPage() {
             const drawAdmitForm = (startY: number, copyType: "OFFICE COPY" | "STUDENT COPY") => {
                 // Outer Border for this half
                 doc.setLineWidth(0.5);
-                doc.setDrawColor(0);
+                doc.setDrawColor("#000000");
                 doc.rect(5, startY, 200, 140); // 140mm height per copy
 
                 // --- HEADER ---
@@ -134,22 +134,22 @@ export default function AdmissionPage() {
                 doc.text("ALFUNUN ACADEMY", 105, startY + 14, { align: "center" });
 
                 // Tagline Box (Enhanced)
-                doc.setDrawColor(0);
-                doc.setFillColor(0);
+                doc.setDrawColor("#000000");
+                doc.setFillColor("#000000");
                 // Larger box, centered
                 doc.roundedRect(75, startY + 18, 60, 6, 1, 1, "F");
 
-                doc.setTextColor(255);
+                doc.setTextColor("#ffffff");
                 doc.setFontSize(9);
                 doc.setFont("helvetica", "bold");
                 doc.text("LEARN HERE EARN ANYWHERE", 105, startY + 22, { align: "center" });
-                doc.setTextColor(0);
+                doc.setTextColor("#000000");
 
                 // Copy Type Label (Top Right)
                 doc.setFontSize(8);
-                doc.setTextColor(100);
+                doc.setTextColor("#646464");
                 doc.text(copyType, 195, startY + 8, { align: "right" });
-                doc.setTextColor(0);
+                doc.setTextColor("#000000");
 
                 // Separator
                 doc.setLineWidth(0.5);
@@ -171,7 +171,7 @@ export default function AdmissionPage() {
                 const formTop = startY + 45; // Pushed down for address space
 
                 // Photo Box (Right)
-                doc.setDrawColor(0);
+                doc.setDrawColor("#000000");
                 doc.rect(175, formTop, 25, 30);
                 // Draw text only if no photo is present (to avoid overlay)
                 if (!studentPhoto) {
@@ -180,13 +180,13 @@ export default function AdmissionPage() {
                 }
 
                 // Admission Title (Left)
-                doc.setFillColor(0);
+                doc.setFillColor("#000000");
                 doc.roundedRect(10, formTop, 50, 8, 1, 1, "F");
-                doc.setTextColor(255);
+                doc.setTextColor("#ffffff");
                 doc.setFontSize(10);
                 doc.setFont("helvetica", "bold");
                 doc.text("ADMISSION FORM", 35, formTop + 5, { align: "center" });
-                doc.setTextColor(0);
+                doc.setTextColor("#000000");
 
                 // Student ID & Date
                 doc.setFontSize(9);
@@ -226,7 +226,7 @@ export default function AdmissionPage() {
                 y += 4;
                 doc.setFont("helvetica", "bold");
                 doc.text("Selected Course:", leftX, y);
-                doc.setFillColor(220); // Light gray highlight
+                doc.setFillColor("#dcdcdc"); // Light gray highlight
                 doc.rect(35, y - 4, 130, 6, "F");
                 doc.setFont("helvetica", "bold");
                 doc.text(form.course || "N/A", 38, y);
